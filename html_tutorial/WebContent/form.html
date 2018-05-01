@@ -3,6 +3,18 @@
 	<head>
 		<meta charset="EUC-KR">
 		<title>form</title>
+		<style>
+			fieldset { 
+			    display: block;
+			    margin-left: 2px;
+			    margin-right: 2px;
+			    padding-top: 0.35em;
+			    padding-bottom: 0.625em;
+			    padding-left: 0.75em;
+			    padding-right: 0.75em;
+			    border: 2px groove (internal value);
+			}
+		</style>
 	</head>
 	<body>
 	
@@ -162,6 +174,24 @@
 				</form>
 			</div>
 			
+			<div>
+				<h3>textarea</h3>
+			</div>
+			
+			<div>
+				<ol>
+					<li>&lt;textarea rows="10" cols="30"&gt;</li>
+					<li>The cat was playing in the garden.</li>
+					<li>&lt;/textarea&gt;</li>
+				</ol>
+			</div>
+			
+			<div>
+				<textarea rows="20" cols="50";>
+I haven't finished the work yet.
+				</textarea>
+			</div>
+			
 			
 		<div>
 			<h3>3. &lt;fieldset&gt;과 &lt;legend&gt;태그</h3>
@@ -169,18 +199,18 @@
 			
 			<div>
 				<ol>
-					<li><!DOCTYPE HTM></li>
-					<li><html></li>
-					<li>    <form></li>
-					<li>        <fieldset><!--폼양식--></li>
-					<li>            <legend>폼양식 제목(설명)</legend></li>
-					<li>            <div></li>
-					<li>                <label for="userName">이름:</label></li>
-					<li>                <input type="text" id="userName"></li>
-					<li>            </div></li>
-					<li>        </fieldset></li>
-					<li>    </form></li>
-					<li></html></li>
+					<li>&lt;!DOCTYPE HTM&gt;</li>
+					<li>&lt;html&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;&lt;!--폼양식--&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;폼양식 제목(설명)&lt;/legend&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="userName"&gt;이름:&lt;/label&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="userName"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</li>
+					<li>&lt;/html&gt;</li>
 				</ol>
 			</div>
 			
@@ -189,18 +219,19 @@
 			<div>결과화면(구글 브라우즈에서 테스트)</div>
 			
 			<div>
-				<!DOCTYPE HTM>
-				<html>
-				    <form>
-				        <fieldset>
-				            <legend>폼양식 제목(설명)</legend>
-				            <div>
-				                <label for="userName">이름:</label>
-				                <input type="text" id="userName">
-				            </div>
-				        </fieldset>
-				    </form>
-				</html>
+				<form>
+					<fieldset>
+						<legend>폼 양식</legend><!-- 오른쪽으로 너무 긴데 줄이는 방법을 모르겠습니다. -->
+							<div>
+								<label for="userName">이름:</label>
+								<input type="text" id="userName">
+								<br>
+								<label for="userAge">나이:</label>
+								<input type="text" id="userAge">
+							</div>
+							
+					</fieldset>
+				</form>
 			</div>
 	</body>
 </html>
